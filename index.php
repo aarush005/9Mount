@@ -137,7 +137,7 @@
     <!-- header section strats -->
     <header class="header_section">
         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color: #ff4500;">
                 <div class="container">
                     <a class="navbar-brand" href="index.php">
                         <!-- <img src="images/logo.png" alt=""> -->
@@ -151,17 +151,17 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="product.php">Product</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.php">Contact us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="login.php">Login</a></li>
+                            <li class="nav-item-dark"><a class="nav-link" href="index.php">Home</a></li>
+                            <li class="nav-item-dark"><a class="nav-link" href="about.php">About</a></li>
+                            <li class="nav-item-dark"><a class="nav-link" href="product.php">Product</a></li>
+                            <li class="nav-item-dark"><a class="nav-link" href="contact.php">Contact us</a></li>
+                            <li class="nav-item-dark"><a class="nav-link" href="login.php">Login</a></li>
                         </ul>
                     </div>
-                    <div class="quote_btn-container ">
+                    <div class="quote_btn-container-dark ">
                         <a href="">
-                            <img src="images/cart.png" alt="">
                             <div class="cart_number">
+                                <img src="images/cart.png" alt="">
                                 0
                             </div>
                         </a>
