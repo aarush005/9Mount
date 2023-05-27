@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Ablepro v8.0 bootstrap admin template by Phoenixcoded</title>
-	<!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 11]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="">
-	<meta name="author" content="Phoenixcoded" />
-	<!-- Favicon icon -->
-	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
-	<!-- vendor css -->
-	<link rel="stylesheet" href="assets/css/style.css">
-	
-	
+<head>
+    <title>Ablepro v8.0 bootstrap admin template by Phoenixcoded</title>
+    <!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 11]>
+    	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <meta name="author" content="Phoenixcoded" />
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- vendor css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    
 
 </head>
 <body class="">
@@ -258,59 +259,167 @@
 
 <!-- [ Main Content ] start -->
 <div class="pcoded-main-container">
-	<div class="pcoded-content">
-		<!-- [ breadcrumb ] start -->
-		<div class="page-header">
-			<div class="page-block">
-				<div class="row align-items-center">
-					<div class="col-md-12">
-						<div class="page-header-title">
-							<h5 class="m-b-10">Tooltip &amp; Popover</h5>
-						</div>
-						<ul class="breadcrumb">
-							<li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
-							<li class="breadcrumb-item"><a href="#!">Basic Components</a></li>
-							<li class="breadcrumb-item"><a href="#!">Tooltip &amp; Popover</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- [ breadcrumb ] end -->
-		<!-- [ Main Content ] start -->
-		<div class="row">
-			<!-- [ tooltip ] start -->
-			<div class="col-md-6 col-sm-12">
-				<div class="card">
-					<div class="card-header">
-						<h5>Tooltip</h5>
-					</div>
-					<div class="card-body btn-page">
-						<button type="button" class="btn  btn-danger" data-toggle="tooltip" data-placement="top" title="tooltip on top">Top</button>
-						<button type="button" class="btn  btn-primary" data-toggle="tooltip" data-placement="left" title="tooltip on left">Left</button>
-						<button type="button" class="btn  btn-success" data-toggle="tooltip" data-placement="right" title="tooltip on right">Right</button>
-						<button type="button" class="btn  btn-warning" data-toggle="tooltip" data-placement="bottom" title="tooltip on bottom">Bottom</button>
-						<button type="button" class="btn  btn-info" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">Html Tooltip</button>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-sm-12">
-				<div class="card">
-					<div class="card-header">
-						<h5>Popover</h5>
-					</div>
-					<div class="card-body btn-page">
-						<button type="button" class="btn  btn-danger" data-toggle="popover" data-placement="top" title="" data-content="top by popover" data-original-title="popup on top">Top</button>
-						<button type="button" class="btn  btn-primary" data-toggle="popover" data-placement="left" title="popup on left" data-content="left by popover">Left</button>
-						<button type="button" class="btn  btn-success" data-toggle="popover" data-placement="right" title="popup on right" data-content="right by popover">Right</button>
-						<button type="button" class="btn  btn-warning" data-toggle="popover" data-placement="bottom" title="popup on bottom" data-content="bottom by popover">Bottom</button>
-						<button type="button" class="btn  btn-info" data-toggle="popover" data-html="true" data-placement="top" title="<em>popup</em> <u>with</u> <b>HTML</b>" data-content="popup by HTML">Html popup</button>
-					</div>
-				</div>
-			</div>
-			<!-- [ tooltip ] end -->
-		</div>
-	</div>
+    <div class="pcoded-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">Sample Page</h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="#!">Sample Page</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ breadcrumb ] end -->
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ sample-page ] start -->
+            <div class="col-sm-12">
+                <div class="card">
+
+                    <div class="card-header">
+                        <h5>Hello card</h5>
+                        <div class="card-header-right">
+                            <div class="btn-group card-option">
+                                <button type="button" class="btn dropdown-toggle btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="feather icon-more-horizontal"></i>
+                                </button>
+                                <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                    <li class="dropdown-item full-card"><a href="#!"><span><i class="feather icon-maximize"></i> maximize</span><span style="display:none"><i class="feather icon-minimize"></i> Restore</span></a></li>
+                                    <li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i> collapse</span><span style="display:none"><i class="feather icon-plus"></i> expand</span></a></li>
+                                    <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                    <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                            officia deserunt mollit anim id est laborum."
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- [ sample-page ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+		<table class="table align-middle mb-0 bg-white">
+			<thead class="bg-light">
+			  <tr>
+				<th class="ml-5">Product</th>
+				<th>Title</th>
+				<th>Status</th>
+				<th>Position</th>
+				<th>Actions</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td>
+				  <div class="d-flex align-items-center ml-5">
+					<img
+						src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+						alt=""
+						style="width: 75px; height: 75px"
+						class="rounded-circle"
+						/>
+					<!-- <div class="ms-3">
+					  <p class="fw-bold mb-1">John Doe</p>
+					  <p class="text-muted mb-0">john.doe@gmail.com</p>
+					</div> -->
+				  </div>
+				</td>
+				<td>
+				  <p class="fw-normal mb-1">Software engineer</p>
+				  <p class="text-muted mb-0">IT department</p>
+				</td>
+				<td>
+				  <span class="badge badge-success rounded-pill d-inline">Active</span>
+				</td>
+				<td>Senior</td>
+				<td>
+				  <button type="button" class="btn btn-link btn-sm btn-rounded">
+					Edit
+				  </button>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+				  <div class="d-flex align-items-center ml-5">
+					<img
+						src="https://mdbootstrap.com/img/new/avatars/6.jpg"
+						class="rounded-circle"
+						alt=""
+						style="width: 75px; height: 75px"						/>
+					<!-- <div class="ms-3">
+					  <p class="fw-bold mb-1">Alex Ray</p>
+					  <p class="text-muted mb-0">alex.ray@gmail.com</p>
+					</div> -->
+				  </div>
+				</td>
+				<td>
+				  <p class="fw-normal mb-1">Consultant</p>
+				  <p class="text-muted mb-0">Finance</p>
+				</td>
+				<td>
+				  <span class="badge badge-primary rounded-pill d-inline"
+						>Onboarding</span
+					>
+				</td>
+				<td>Junior</td>
+				<td>
+				  <button
+						  type="button"
+						  class="btn btn-link btn-rounded btn-sm fw-bold"
+						  data-mdb-ripple-color="dark"
+						  >
+					Edit
+				  </button>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+				  <div class="d-flex align-items-center ml-5">
+					<img
+						src="https://mdbootstrap.com/img/new/avatars/7.jpg"
+						class="rounded-circle"
+						alt=""
+						style="width: 75px; height: 75px"						/>
+					<!-- <div class="ms-3">
+					  <p class="fw-bold mb-1">Kate Hunington</p>
+					  <p class="text-muted mb-0">kate.hunington@gmail.com</p>
+					</div> -->
+				  </div>
+				</td>
+				<td>
+				  <p class="fw-normal mb-1">Designer</p>
+				  <p class="text-muted mb-0">UI/UX</p>
+				</td>
+				<td>
+				  <span class="badge badge-warning rounded-pill d-inline">Awaiting</span>
+				</td>
+				<td>Senior</td>
+				<td>
+				  <button
+						  type="button"
+						  class="btn btn-link btn-rounded btn-sm fw-bold"
+						  data-mdb-ripple-color="dark"
+						  >
+					Edit
+				  </button>
+				</td>
+			  </tr>
+			</tbody>
+		  </table> 
+    </div>
+	
 </div>
 <!-- [ Main Content ] end -->
     <!-- Warning Section start -->
@@ -360,6 +469,8 @@
     <![endif]-->
     <!-- Warning Section Ends -->
 
+	
+
     <!-- Required Js -->
     <script src="assets/js/vendor-all.min.js"></script>
     <script src="assets/js/plugins/bootstrap.min.js"></script>
@@ -369,4 +480,5 @@
 
 
 </body>
+
 </html>
