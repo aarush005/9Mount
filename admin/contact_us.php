@@ -1,6 +1,21 @@
-<?php include('../admin/header.php');?>
+<?php include('header.php');
+ 
+
+if(isset($_GET['type']) && $_GET['type']!=''){
+	$type=get_safe_value($con,$_GET['type']);
 	
-	
+	if($type=='delete'){
+		
+		$id=get_safe_value($con,$_GET['id']);
+		$delete_sql="DELETE FROM contact_us WHERE id='$id'";
+	mysqli_query($con,$delete_sql);
+}
+}
+
+$sql ="SELECT * FROM contact_us ORDER BY id desc";
+$res=mysqli_query($con,$sql);
+
+?>
 
 <!-- [ Main Content ] start -->
 <div class="pcoded-main-container">
@@ -11,7 +26,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-12">
                         <div class="page-header-title">
-                            <h5 class="m-b-10">Sample Page</h5>
+                            <h5 class="m-b-10">Contact Us</h5>
                         </div>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
@@ -58,114 +73,49 @@
 		<table class="table align-middle mb-0 bg-white">
 			<thead class="bg-light">
 			  <tr>
-				<th class="ml-5">Product</th>
-				<th>Title</th>
-				<th>Status</th>
-				<th>Position</th>
-				<th>Actions</th>
+				<th class="ml-5">#</th>
+				<th>Id</th>
+				<th >Name</th>
+				<th>Email</th>
+				<th>Mobile</th>
+				<th>Comment</th>
+				<th>Date</th>
 			  </tr>
 			</thead>
 			<tbody>
+				<?php $i=1;
+				while($row=mysqli_fetch_assoc($res)){?>
 			  <tr>
+				<td class="serial"><?php echo $i?></td>
+				<td><?php echo $row['id']?></td>
+				<td><?php echo $row['name']?></td>
+				<td><?php echo $row['email']?></td>
+				<td><?php echo $row['mobile']?></td>
+				<td><?php echo $row['comment']?></td> 
+				<td><?php echo $row['added_on']?></td>
 				<td>
-				  <div class="d-flex align-items-center ml-5">
-					<img
-						src="https://mdbootstrap.com/img/new/avatars/8.jpg"
-						alt=""
-						style="width: 75px; height: 75px"
-						class="rounded-circle"
-						/>
-					<!-- <div class="ms-3">
-					  <p class="fw-bold mb-1">John Doe</p>
-					  <p class="text-muted mb-0">john.doe@gmail.com</p>
-					</div> -->
-				  </div>
+					<?php 
+					echo "&nbsp;<button class='btn btn-danger'><a href='?&id=".$row['id']."' class='text-light'>Delete</a></button>&nbsp;";
+				}
+					?>
+				
+				</span>
 				</td>
-				<td>
-				  <p class="fw-normal mb-1">Software engineer</p>
-				  <p class="text-muted mb-0">IT department</p>
-				</td>
-				<td>
-				  <span class="badge badge-success rounded-pill d-inline">Active</span>
-				</td>
-				<td>Senior</td>
-				<td>
-				  <button type="button" class="btn btn-link btn-sm btn-rounded">
-					Edit
-				  </button>
-				</td>
+				
 			  </tr>
-			  <tr>
-				<td>
-				  <div class="d-flex align-items-center ml-5">
-					<img
-						src="https://mdbootstrap.com/img/new/avatars/6.jpg"
-						class="rounded-circle"
-						alt=""
-						style="width: 75px; height: 75px"						/>
-					<!-- <div class="ms-3">
-					  <p class="fw-bold mb-1">Alex Ray</p>
-					  <p class="text-muted mb-0">alex.ray@gmail.com</p>
-					</div> -->
-				  </div>
-				</td>
-				<td>
-				  <p class="fw-normal mb-1">Consultant</p>
-				  <p class="text-muted mb-0">Finance</p>
-				</td>
-				<td>
-				  <span class="badge badge-primary rounded-pill d-inline"
-						>Onboarding</span
-					>
-				</td>
-				<td>Junior</td>
-				<td>
-				  <button
-						  type="button"
-						  class="btn btn-link btn-rounded btn-sm fw-bold"
-						  data-mdb-ripple-color="dark"
-						  >
-					Edit
-				  </button>
-				</td>
-			  </tr>
-			  <tr>
-				<td>
-				  <div class="d-flex align-items-center ml-5">
-					<img
-						src="https://mdbootstrap.com/img/new/avatars/7.jpg"
-						class="rounded-circle"
-						alt=""
-						style="width: 75px; height: 75px"						/>
-					<!-- <div class="ms-3">
-					  <p class="fw-bold mb-1">Kate Hunington</p>
-					  <p class="text-muted mb-0">kate.hunington@gmail.com</p>
-					</div> -->
-				  </div>
-				</td>
-				<td>
-				  <p class="fw-normal mb-1">Designer</p>
-				  <p class="text-muted mb-0">UI/UX</p>
-				</td>
-				<td>
-				  <span class="badge badge-warning rounded-pill d-inline">Awaiting</span>
-				</td>
-				<td>Senior</td>
-				<td>
-				  <button
-						  type="button"
-						  class="btn btn-link btn-rounded btn-sm fw-bold"
-						  data-mdb-ripple-color="dark"
-						  >
-					Edit
-				  </button>
-				</td>
-			  </tr>
+				
+			  <?php ?>
 			</tbody>
 		  </table> 
+
+		  <a href="manage_categories.php"><button type="button" class="btn btn-primary"> Add Categories</button></a>
+		  
+          
     </div>
 	
 </div>
+
+
 <!-- [ Main Content ] end -->
     <!-- Warning Section start -->
     <!-- Older IE warning message -->
