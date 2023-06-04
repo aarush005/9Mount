@@ -1,6 +1,4 @@
 <?php include('header.php');
- 
-
 if(isset($_GET['type']) && $_GET['type']!=''){
 	$type=get_safe_value($con,$_GET['type']);
 	if($type=='status'){
@@ -22,7 +20,7 @@ if(isset($_GET['type']) && $_GET['type']!=''){
 }
 }
 
-$sql ="SELECT product.*,categories.categories FROM product,categories  where product.categories_id=categories.id ORDER BY product.id desc";
+$sql ="SELECT product.*,categories.categories FROM product,categories  WHERE product.categories_id=categories.id ORDER BY product.id desc";
 $res=mysqli_query($con,$sql);
 ?>
 
@@ -94,13 +92,14 @@ $res=mysqli_query($con,$sql);
 			</thead>
 			<tbody>
 				<?php $i=1;
-				while($row=mysqli_fetch_assoc($res)){?>
+				while($row=mysqli_fetch_assoc($res))
+                {?>
 			  <tr>
 				<td class="serial"><?php echo $i?></td>
 				<td><?php echo $row['id']?></td>
 				<td><?php echo $row['categories']?></td>
 				<td><?php echo $row['name']?></td>
-				<td><?php echo $row['image']?></td>
+				<td><img src="../admin/assets/images/product/<?php echo $row['image']?>"/></td>
 				<td><?php echo $row['mrp']?></td>
 				<td><?php echo $row['price']?></td>
 				<td><?php echo $row['qty']?></td>
@@ -113,7 +112,7 @@ $res=mysqli_query($con,$sql);
 					}
 					echo "&nbsp;<button class='btn btn-danger'><a href='?&id=".$row['id']."' class='text-light'>Delete</a></button>&nbsp;";
 
-					echo "&nbsp;<button class='btn btn-primary'><a href='manage_categories.php?type=delete&id=".$row['id']."' class='text-light'>Edit</a></button>";
+					echo "&nbsp;<button class='btn btn-primary'><a href='manage_product.php?type=delete&id=".$row['id']."' class='text-light'>Edit</a></button>";
 				}
 					?>
 				
@@ -122,11 +121,10 @@ $res=mysqli_query($con,$sql);
 				
 			  </tr>
 				
-			  <?php ?>
 			</tbody>
 		  </table> 
 
-		  <a href="manage_products.php"><button type="button" class="btn btn-primary"> Add Categories</button></a>
+		  <a href="manage_product.php"><button type="button" class="btn btn-primary"> Add Products</button></a>
 		  
           
     </div>
@@ -134,53 +132,6 @@ $res=mysqli_query($con,$sql);
 </div>
 
 
-<!-- [ Main Content ] end -->
-    <!-- Warning Section start -->
-    <!-- Older IE warning message -->
-    <!--[if lt IE 11]>
-        <div class="ie-warning">
-            <h1>Warning!!</h1>
-            <p>You are using an outdated version of Internet Explorer, please upgrade
-               <br/>to any of the following web browsers to access this website.
-            </p>
-            <div class="iew-container">
-                <ul class="iew-download">
-                    <li>
-                        <a href="http://www.google.com/chrome/">
-                            <img src="assets/images/browser/chrome.png" alt="Chrome">
-                            <div>Chrome</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.mozilla.org/en-US/firefox/new/">
-                            <img src="assets/images/browser/firefox.png" alt="Firefox">
-                            <div>Firefox</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.opera.com">
-                            <img src="assets/images/browser/opera.png" alt="Opera">
-                            <div>Opera</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.apple.com/safari/">
-                            <img src="assets/images/browser/safari.png" alt="Safari">
-                            <div>Safari</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
-                            <img src="assets/images/browser/ie.png" alt="">
-                            <div>IE (11 & above)</div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <p>Sorry for the inconvenience!</p>
-        </div>
-    <![endif]-->
-    <!-- Warning Section Ends -->
 
 	
 

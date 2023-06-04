@@ -130,6 +130,8 @@ else {header('location:login.php');
 					
 					<li class="nav-item"><a href="categories.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Categories </span></a></li>
 
+					<li class="nav-item"><a href="product.php" class="nav-link "><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Products </span></a></li>
+
 				</ul>
 				
 				<!-- <div class="card text-center">
