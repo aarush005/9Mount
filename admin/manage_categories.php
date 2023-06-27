@@ -36,7 +36,7 @@ if(isset($_POST['submit'])){
             }else{
                 mysqli_query($con,"INSERT INTO categories(categories,status)values('$categories','1')");
             }
-            header("Location:categories.php");
+            echo "<meta http-equiv='refresh' content=';url=categories.php'>";
             die();
       
     }

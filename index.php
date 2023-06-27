@@ -1,7 +1,11 @@
 <?php include 'header.php'; ?>
 
 
-
+<style>
+    .wrapper{
+        height:50%;
+    }
+</style>
     <!-- slider section -->
     <section class=" slider_section position-relative">
         <div class="design-box">
@@ -378,12 +382,12 @@
     </center>
 </div>
 
-<div class="row " style="margin-bottom:-387px;">
+<div class="row " style="margin-bottom:100px; margin-top:150px;">
     <div class="col md-3">
 
 
 
-        <div class="wrapper">
+        <div class="wrapper" >
 
             <div class="card text-center">
 

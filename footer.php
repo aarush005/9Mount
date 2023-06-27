@@ -105,7 +105,7 @@
 <!-- End of .container -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-danger rounded-2   back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-danger rounded-2   back-to-top" style="width:50px;"><i class="bi bi-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

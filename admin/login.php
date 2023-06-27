@@ -3,9 +3,9 @@ require('./connection/connection.php');
 require('./connection/fuction.php');
 $msg = '';
 if (isset($_POST['submit'])) {
-    echo $username = get_safe_value($con,$_POST['username']);
-    echo $password = get_safe_value($con,$_POST['password']);
-}
+     $username = get_safe_value($con,$_POST['username']);
+     $password = get_safe_value($con,$_POST['password']);
+
 $sql = "SELECT * FROM `admin_users` Where username='$username' AND password = '$password'";
 $res = mysqli_query($con, $sql);
 $count = mysqli_num_rows($res);
@@ -17,7 +17,7 @@ if ($count>0) {
 } else {
     $msg = "Please enter correct login details";
 }
-
+}
 ?>
 
 

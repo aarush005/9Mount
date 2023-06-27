@@ -28,7 +28,6 @@ else {header('location:login.php');
     <!-- vendor css -->
     <link rel="stylesheet" href="assets/css/style.css">
     
-    
 
 </head>
 <body class="">
@@ -227,7 +226,7 @@ else {header('location:login.php');
 											<div class="media">
 												<img class="img-radius" src="assets/images/user/avatar-2.jpg" alt="Generic placeholder image">
 												<div class="media-body">
-													<p><strong>Joseph William</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>30 min</span></p>
+			  									<p><strong>Joseph William</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>30 min</span></p>
 													<p>Prchace New Theme and make payment</p>
 												</div>
 											</div>

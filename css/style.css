@@ -517,7 +517,7 @@
 .wrapper{
 
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -528,7 +528,7 @@
 
     height: 420px;
     width: 320px;
-    background-color:#fbb534;
+    /* background-color:#fbb534; */
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -537,57 +537,69 @@
 
 }
 
-.card::before{
+.card:before{
     position: absolute;
     width: 100%;
     height: 100%;
     content: "";
     top:-50%;
-    background-color:#f5e78d;
+    /* background-color:#f5e78d; */
     transform: skewY(345deg);
     transition:2s ease-in;
   
 }
 
 
-.card:hover::before{
+.card:hover:before{
     top:-70%;
     transform: skewY(390deg);
 }
 
-.card .image{
 
+
+.card .image{
     position: absolute;
-    
     width: 100%;    
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
+   
+   
 .card .image img{
 
     max-width: 100%;
-    transition: 2s ease-in;
+   transition: 1.5s ease-out;
 }
 
 .card:hover .image img{
 
     width: 80%;
+    
 }
 
 .about-product{
 
-    position: absolute;
+    /* position: absolute;
     color: #fff;
     bottom: -50px !important;
     text-align: center;
     left: 20%;
-    transition: 2s ease-in;
+    transition: 2s ease-in; */
+
+    bottom: -360px !important;
+    text-align: center;
+    left: 20%;
+    position: absolute;
+    /* z-index: 3; */
+    color: #f5f5f5;
+    opacity: 10;
+    transform: translateY(10%);
+    transition: 1.5s;
+    color: black;
 }
 
-
+ 
 .card:hover .about-product{
 
    bottom: 20px !important;
@@ -614,6 +626,13 @@
     background-color: #fbb534 !important;
     border-color: #fbb534 !important;
 
+}
+
+@media screen and (max-width: 600px) {
+    .Product .col{
+        margin-top: 100px;
+    }
+    
 }
 
 /* product end */
@@ -673,7 +692,7 @@
 
 /*** Quote ***/
 @media (min-width: 992px) {
-    .container.quote {
+    .cont   ainer.quote {
         max-width: 100% !important;
     }
 
@@ -951,3 +970,117 @@
     z-index: -1;
     transition: ease 0.3s;
 }
+
+/* shop sidebar start*/
+.slide{
+    margin-left: 50px;
+}
+.box-minmax {
+    margin-top: 30px;
+    width: 298px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.box-minmax span:first-child {
+    margin-left: 10px;
+}
+
+.range-slider {
+    /* margin-top: 30vh; */
+}
+
+.rs-range {
+    margin-top: 29px;
+    width: 300px;
+    -webkit-appearance: none;
+}
+
+.rs-range:focus {
+    outline: none;
+}
+
+.rs-range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    box-shadow: none;
+    background: #ffffff;
+    border-radius: 0px;
+    border: 0px solid #010101;
+}
+
+.rs-range::-moz-range-track {
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    box-shadow: none;
+    background: #ffffff;
+    border-radius: 0px;
+    border: 0px solid #010101;
+}
+
+.rs-range::-webkit-slider-thumb {
+    box-shadow: none;
+    border: 0px solid #ffffff;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    height: 42px;
+    width: 22px;
+    border-radius: 22px;
+    background: white;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -20px;
+}
+
+.rs-range::-moz-range-thumb {
+    box-shadow: none;
+    border: 0px solid #ffffff;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    height: 42px;
+    width: 22px;
+    border-radius: 22px;
+    background: white;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -20px;
+}
+
+.rs-range::-moz-focus-outer {
+    border: 0;
+}
+
+.rs-label {
+    position: relative;
+    transform-origin: center center;
+    display: block;
+    width: 74px;
+    height: 74px;
+    background: transparent;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 22px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    margin-top: 20px;
+    margin-left: -38px;
+    left: attr(value);
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 36px;
+}
+
+.rs-label::after {
+    content: "kg";
+    display: block;
+    font-size: 20px;
+    letter-spacing: 0.07em;
+    margin-top: -2px;
+}
+/* shop sidebar stop */

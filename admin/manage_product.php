@@ -67,7 +67,7 @@ if(isset($_POST['submit'])){
         }
         
     }
-
+ 
     if($_FILES['image']['type']!='' &&  ($_FILES['image']['type']!='image/png' || $_FILES['image']['type']!='image/jpg' || $_FILES['image']['type']!='image/jpeg' ) ){
         $msg="Invalid File Type!(Only jpeg, jpg, png format allowed";
     }
@@ -92,6 +92,7 @@ if(isset($_POST['submit'])){
             }
             header("Location:product.php");
             die();
+
     }
 }?>
 <!-- [ Main Content ] start -->

@@ -20,9 +20,12 @@ if(isset($_GET['type']) && $_GET['type']!=''){
 }
 }
 
+
 $sql ="SELECT product.*,categories.categories FROM product,categories  WHERE product.categories_id=categories.id ORDER BY product.id desc";
 $res=mysqli_query($con,$sql);
 ?>
+
+
 
 <!-- [ Main Content ] start -->
 <div class="pcoded-main-container">
@@ -99,7 +102,7 @@ $res=mysqli_query($con,$sql);
 				<td><?php echo $row['id']?></td>
 				<td><?php echo $row['categories']?></td>
 				<td><?php echo $row['name']?></td>
-				<td><img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$row['image']?>"/></td>
+				<td><img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$row['image']?>" style="width: 100px; height:100px;"/></td>
 				<td><?php echo $row['mrp']?></td>
 				<td><?php echo $row['price']?></td>
 				<td><?php echo $row['qty']?></td>
@@ -119,22 +122,13 @@ $res=mysqli_query($con,$sql);
 				</span>
 				</td>
 				
-			  </tr>
+			  </tr> 
 				
 			</tbody>
-		  </table> 
-
+		  </table>  
 		  <a href="manage_product.php"><button type="button" class="btn btn-primary"> Add Products</button></a>
-		  
-          
     </div>
-	
 </div>
-
-
-
-	
-
     <!-- Required Js -->
 <?php include('../admin/footer.php');?>
 
